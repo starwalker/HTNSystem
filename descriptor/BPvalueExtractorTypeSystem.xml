@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <name>BPvalueExtractorTypeSystem</name>
+    <imports>
+        <import location="BasicTypeSystem.xml"/>
+        <import name="types.BPvalueExtractortypeSystemDescriptor"/>
+    </imports>
+    <types>
+        <typeDescription>
+            <name>BPvalueExtractor.systolic</name>
+            <description>Type defined in null.BPvalueExtractor</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>BPvalueExtractor.diastolic</name>
+            <description>Type defined in null.BPvalueExtractor</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>BPvalueExtractor.valueSeparator</name>
+            <description>Type defined in null.BPvalueExtractor</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>BPvalueExtractor.separator</name>
+            <description>Type defined in null.BPvalueExtractor</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>BPvalueExtractor.Bpvalue</name>
+            <description>Type defined in null.BPvalueExtractor</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>BPvalueExtractor.bp</name>
+            <description>Type defined in null.BPvalueExtractor</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>BPvalueExtractor.blood</name>
+            <description>Type defined in null.BPvalueExtractor</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>BPvalueExtractor.pressure</name>
+            <description>Type defined in null.BPvalueExtractor</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>BPvalueExtractor.systolic</name>
+            <description>Type defined in null.BPvalueExtractor</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>BPvalueExtractor.diastolic</name>
+            <description>Type defined in null.BPvalueExtractor</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>BPvalueExtractor.valueSeparator</name>
+            <description>Type defined in null.BPvalueExtractor</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>BPvalueExtractor.separator</name>
+            <description>Type defined in null.BPvalueExtractor</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>BPvalueExtractor.Bpvalue</name>
+            <description>Type defined in null.BPvalueExtractor</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>BPvalueExtractor.bp</name>
+            <description>Type defined in null.BPvalueExtractor</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>BPvalueExtractor.blood</name>
+            <description>Type defined in null.BPvalueExtractor</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>BPvalueExtractor.pressure</name>
+            <description>Type defined in null.BPvalueExtractor</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+    </types>
+</typeSystemDescription>

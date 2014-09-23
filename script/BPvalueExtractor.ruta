@@ -1,0 +1,29 @@
+TYPESYSTEM types.BPvalueExtractortypeSystemDescriptor;
+
+
+DECLARE systolic,diastolic,valueSeparator,separator,Bpvalue;
+BOOLEAN flag = true;
+WORDLIST htAbbrList  = 'HypertensionAbbr.txt';
+Document{-> MARKFAST(hypertension, htAbbrList,true)};
+DECLARE bp , blood, pressure;
+W{REGEXP("BP",flag) -> MARK(bp)};
+W{REGEXP("blood",flag) -> MARK(blood)};
+W{REGEXP("pressure",flag) -> MARK(pressure)};
+blood + pressure {-> MARK(bp, 1,2)};
+//value separator
+SPECIAL{REGEXP("=") -> MARK(separator)};
+COLON{-> MARK(separator)};
+//BP Value
+NUM{REGEXP(".{2,3}") -> MARK(systolic)} ;
+NUM{REGEXP(".{2,3}") -> MARK(diastolic,1,2)} ;
+//valueSeparator
+SPECIAL{REGEXP("/") -> MARK(valueSeparator)};
+systolic+ valueSeparator+ diastolic {-> MARK(Bpvalue,  1, 2, 3)};
+bp+ separator + Bpvalue {-> MARK(BpAnnotation,  1, 2, 3,4,5)};
+bp+ W*Bpvalue {-> MARK(BpAnnotation,1,5)} ;
+
+
+
+
+
+ 

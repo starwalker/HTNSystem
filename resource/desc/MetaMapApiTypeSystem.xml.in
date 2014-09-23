@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <name>Document</name>
+  <description>Document Representation</description>
+  <version>1.0</version>
+  <vendor/>
+  <imports>
+    <!-- import location="@@basedir@@/src/uima/desc/BasicMetaMapTypeSystem.xml"/ -->
+    <import name="BasicMetaMapTypeSystem"/>
+  </imports>
+  <types>
+    <typeDescription>
+      <name>gov.nih.nlm.nls.metamap.uima.ts.AcronymAbbrev</name>
+      <description>Container for MetaMap Acronym or Abbreviation annotation.</description>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>acronym</name>
+          <description>Acronym or Abbreviation</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>expansion</name>
+          <description>expansion of the acronym or abbreviation</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>countList</name>
+          <description>count list</description>
+          <rangeTypeName>uima.cas.IntegerArray</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>cuiList</name>
+          <description>list of concept id for acronym or abbreviation</description>
+          <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.nih.nlm.nls.metamap.uima.ts.Document</name>
+      <description>A citation or item of free-text</description>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>acronymsAbbrevs</name>
+          <description>acronym and abbreviations</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.nih.nlm.nls.metamap.uima.ts.AcronymAbbrev</elementType>
+        </featureDescription>
+        <featureDescription>
+          <name>negations</name>
+          <description/>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>org.metamap.uima.ts.Negation</elementType>
+        </featureDescription>
+        <featureDescription>
+          <name>utterances</name>
+          <description/>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>org.metamap.uima.ts.Utterance</elementType>
+        </featureDescription>
+      </features>
+    </typeDescription>
+  </types>
+</typeSystemDescription>

@@ -1,0 +1,20 @@
+
+==============================================================================================================================================
+					HTNSystem Version 1.0.0
+==============================================================================================================================================
+
+HTNSystem Version 1.0.0 can be run on  windows,linux or OSX. Before running HTNSystem please make sure MetaMap14 is installed and running.
+
+
+Pre-requisites:
+1. Java jdk 1.7 or higher
+2. MetaMap14
+
+Steps:
+1. Unzip HTNSystem1.0.0.zip to directory hereafter refered as HTNSystem_HOME
+2. Open file config.properties lcated under HTNSystem_HOME using text editor of your choice.
+3. Change configuration parameter as per the requirements.
+4. Run MetaMap14 server as per instruction given here();
+5. Open a terminal and navigate to HTNSystem_HOME
+6. Execute command " java -jar HTNSystem1.0.0.jar "path/to/directory/containing/text/files" "
+7. Once system runs successfully output file will written under HTNSystem_HOME or user specified directory(if provided).
