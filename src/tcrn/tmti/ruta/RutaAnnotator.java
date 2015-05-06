@@ -16,9 +16,9 @@ import tcrn.tmti.systemModel.Annotation;
 public class RutaAnnotator {
 
 	/**
-	 * @param  annFile
+	 * @param  {@link AnnotatedFile}
 	 * @return {@link AnnotatedFile}
-	 * @throws Exception  
+	 * @throws Exception;   
 	 */
 	public AnnotatedFile annotate(AnnotatedFile annFile) throws  Exception {
 		AnalysisEngine engine = AnalysisEngineFactory.createEngine("BPvalueExtractorEngine");

@@ -16,10 +16,16 @@ public class MetaMapRunner {
 
 	private SystemConfiguration sysConfiguration;
 
+	/**
+	 * @return {@ SystemConfiguration}
+	 */
 	public SystemConfiguration getSysConfiguration() {
 		return sysConfiguration;
 	}
 
+	/**
+	 * @param sysConfiguration setter for {@ SystemConfiguration}
+	 */
 	public void setSysConfiguration(SystemConfiguration sysConfiguration) {
 		this.sysConfiguration = sysConfiguration;
 	}
@@ -31,11 +37,11 @@ public class MetaMapRunner {
 	 * Processes Metamap using MetaMap UIMA annotator
 	 * */
 	/**
-	 * @param inFile
-	 * @param annotatedFile
+	 * @param inFile inputFile to process using MetaMap
+	 * @param annotatedFile {@ AnnotatedFile} to add MetaMap annotations
 	 * @return {@link AnnotatedFile}
-	 * @throws Exception
-	 * @throws Exception
+	 * @throws Exception Exception to throw
+	 * @throws Exception Exception to throw
 	 */
 	public AnnotatedFile process(AnnotatedFile annotatedFile) throws Exception, Exception {
 
@@ -72,6 +78,10 @@ public class MetaMapRunner {
 		return annotatedFile;
 
 	}
+	/**
+	 * @param cui CUI to check for
+	 * @return {@link Boolean} true if CUI is found in the list else false
+	 */
 	private static boolean filterCui(String cui) {
 		/**
 		 * 
